@@ -1,4 +1,5 @@
 // ALL the Quiz Questions //
+//little help from www.https://quickref.me//
 const questions = [
     {
       question: "What's the name of this song?",
@@ -32,28 +33,43 @@ const questions = [
     }
   ];
 
-  // button/answer stuff //
-  const ClickedButton = e.target;
-  const SelectedAnswer = ClickedButton.innerText;
+  // function when you click on a answer//
   
-  const CurrentQuestion = questions[CurrentQuestionIndex];
+function checkAnswer(e) {
+
+    
+    let ClickedButton = e.target;
   
-  if (SelectedAnswer === CurrentQuestion.correct) {
-    ClickedButton.classList.add("btn-success");
-    score++;
-   } else {
-   ClickedButton.classList.add("btn-danger");
-
-  };
-
-  let AllAnswers = document.querySelectorAll("#answers button");
-
-  for (let i =0; i< AllAnswers.length; i++) {
-    let button = AllAnswers[i];
-
-    button.disabled = true;
-
-    if (button.innerText === questions[CurrentQuestionIndex].correct) {
-        button.classList.add("btn-success");
+    
+    let SelectedAnswer = ClickedButton.innerText;
+  
+    
+    let CurrentQuestion = questions[CurrentQuestionIndex];
+  
+    // check if the answer is right or not//
+    if (SelectedAnswer === CurrentQuestion.correct) {
+      ClickedButton.classList.add("btn-success");
+      score = score + 1;
+    } else {
+      ClickedButton.classList.add("btn-danger");
     }
+  
+    // turn off every answer button //
+    let AllAnswersButtons = document.querySelectorAll("#answers button");
+    for (let i = 0; i < AllAnswersButtons.length; i++) {
+      let button = AllAnswersButtons[i];
+      button.disabled = true;
+  
+      // correct answer goes green
+      if (button.innerText === CurrentQuestion.correct) {
+        button.classList.add("btn-success");
+      }
+    }
+  
+    // show next button//
+    let nextButton = document.getElementById("next-btn");
+    nextButton.style.display = "block";
   }
+  
+
+

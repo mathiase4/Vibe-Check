@@ -1,3 +1,4 @@
+// ALL the Quiz Questions //
 const questions = [
     {
       question: "What's the name of this song?",
@@ -30,7 +31,29 @@ const questions = [
       correct: "Kurt Cobain"
     }
   ];
-  
+
+  // button/answer stuff //
   const ClickedButton = e.target;
   const SelectedAnswer = ClickedButton.innerText;
   
+  const CurrentQuestion = questions[CurrentQuestionIndex];
+  
+  if (SelectedAnswer === CurrentQuestion.correct) {
+    ClickedButton.classList.add("btn-success");
+    score++;
+   } else {
+   ClickedButton.classList.add("btn-danger");
+
+  };
+
+  let AllAnswers = document.querySelectorAll("#answers button");
+
+  for (let i =0; i< AllAnswers.length; i++) {
+    let button = AllAnswers[i];
+
+    button.disabled = true;
+
+    if (button.innerText === questions[CurrentQuestionIndex].correct) {
+        button.classList.add("btn-success");
+    }
+  }

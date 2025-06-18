@@ -18,3 +18,5 @@
 
 
 
+## What i have done today
+- 2025-06-18, i have greated the Quiz through html simple structure and made the questions inside the js file. 

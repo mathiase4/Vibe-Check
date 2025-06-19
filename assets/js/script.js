@@ -1,5 +1,9 @@
 // ALL the Quiz Questions //
 //little help from www.https://quickref.me//
+
+let CurrentQuestionIndex = 0;
+let score = 0;
+
 const questions = [
     {
       question: "What's the name of this song?",
@@ -34,6 +38,8 @@ const questions = [
   ];
 
   // function when you click on a answer//
+ 
+// got help from copilot //
   
 function checkAnswer(e) {
 
@@ -71,5 +77,15 @@ function checkAnswer(e) {
     nextButton.style.display = "block";
   }
   
+// what question are we on //
+function showQuestion() {
 
+    let CurrentQuestion = questions[CurrentQuestionIndex];
+    let questionElement = document.getElementById("question");
+
+    questionElement.innerText = CurrentQuestion.question;
+    let answersContainer = document.getElementById("answers");  
+    answersContainer.innerHTML = "";
+
+}
 

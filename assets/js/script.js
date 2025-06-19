@@ -101,14 +101,45 @@ function showQuestion() {
       function nextQuestion() {
         CurrentQuestionIndex++;
 
+        if (CurrentQuestionIndex >= questions.length) {
+            showEndMessage(); 
+            return; 
+          }
+
         showQuestion();
 
         let nextButton = document.getElementById("next-btn");
         nextButton.style.display = "none";
+        }
 
-
-      }
+      
        let nextButton = document.getElementById("next-btn");
         nextButton.addEventListener("click", nextQuestion);
+    // got help from youtube video and copilot //
+    function showEndMessage() {
+        document.getElementById("question").innerText = "You're done with the quiz! You got " + score + " out of " + questions.length + " correct.";
+        document.getElementById("answers").innerHTML = "";
+        document.getElementById("next-btn").style.display = "none";
+      
         
+        document.getElementById("answers").appendChild(PlayAgainButton);
+      }
 
+        //Make a Play again button //
+        let PlayAgainButton = document.createElement("button");
+        PlayAgainButton.innerText = "Play Again";
+
+
+        PlayAgainButton.addEventListener("click", function() {
+
+            // Reset the quiz
+            CurrentQuestionIndex = 0;
+            score = 0;
+
+            
+            showQuestion();
+
+            
+        });
+
+showQuestion();

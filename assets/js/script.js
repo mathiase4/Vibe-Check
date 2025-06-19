@@ -77,15 +77,38 @@ function checkAnswer(e) {
     nextButton.style.display = "block";
   }
   
-// what question are we on //
+// what question are we on, got help from copilot on this one and little bit research on yt //
 function showQuestion() {
 
     let CurrentQuestion = questions[CurrentQuestionIndex];
     let questionElement = document.getElementById("question");
 
     questionElement.innerText = CurrentQuestion.question;
-    let answersContainer = document.getElementById("answers");  
+    let answersContainer = document.getElementById("answers");
+
     answersContainer.innerHTML = "";
 
-}
+    for (let i = 0; i < CurrentQuestion.answers.length; i++) {
+        let answerText = CurrentQuestion.answers[i];
+        let answerButton = document.createElement("button");
+        answerButton.innerText = answerText;
+        answerButton.classList.add("btn");
+        answersContainer.appendChild(answerButton);
+        answerButton.addEventListener("click", checkAnswer);
+      }
+    }
+
+      function nextQuestion() {
+        CurrentQuestionIndex++;
+
+        showQuestion();
+
+        let nextButton = document.getElementById("next-btn");
+        nextButton.style.display = "none";
+
+
+      }
+       let nextButton = document.getElementById("next-btn");
+        nextButton.addEventListener("click", nextQuestion);
+        
 

@@ -8,6 +8,11 @@ document.addEventListener("DOMContentLoaded", () => {
   const feedbackEl  = document.getElementById("feedback");
   const nextBtn     = document.getElementById("next-btn");
 
+  // audio files
+  const wrongSound     = document.getElementById("wrong-sound");
+const correctSound   = document.getElementById("correct-sound");
+const celebrateSound = document.getElementById("celebrate-sound");
+
 
   // all questions for the quiz //
   const questions = [
@@ -74,51 +79,46 @@ document.addEventListener("DOMContentLoaded", () => {
   
 
       // what happens if u press an answer
-  function checkAnswer(e) {
-    const clicked = e.target;
-    const q = questions[currentQuestionIndex];
-
-    // right or wrong thing
-    if (clicked.innerText === q.correct) {
-      clicked.classList.add("btn-success");
-      score++;
-      scoreEl.innerText = "Score: " + score;
-    } else {
-      clicked.classList.add("btn-danger");
-    }
-
-    // help from gpt with this 
-    Array.from(answersEl.children).forEach(btn => btn.disabled = true);
-
-    // and this 
-    nextBtn.style.display = "block";
-  }
-
-  // searched this on google and some quickref cheatsheet 
-  function nextQuestion() {
-    currentQuestionIndex++;
-    if (currentQuestionIndex < questions.length) {
-      showQuestion();
-    } else {
-      
-      questionEl.innerText = `Quiz finished! You scored ${score}/${questions.length}`;
-      answersEl.innerHTML = "";           
-      nextBtn.style.display = "none"; 
-      feedbackEl.innerText = 
-  score > questions.length/2
-    ? "Well done! Music master!"
-    : "Not bad! Try again to improve!";
+      function checkAnswer(e) {
+        const clicked = e.target;
+        const q = questions[currentQuestionIndex];
+        // right or wrong 
+        if (clicked.innerText === q.correct) {
+          correctSound.play();              // play right sound
+          clicked.classList.add("btn-success");
+          score++;
+          scoreEl.innerText = "Score: " + score;
+        } else {
+          wrongSound.play();                // play wrong sound
+          clicked.classList.add("btn-danger");
+        }
+        Array.from(answersEl.children).forEach(btn => btn.disabled = true);
+        nextBtn.style.display = "block";
+      }
     
-      feedbackEl.innerText =
-        score > questions.length/2
-          ? "Well done! Music master!"
-          : "Not bad! Try again to improve!";
-    }
-  }
-
- 
-  nextBtn.addEventListener("click", nextQuestion);
-showQuestion();
-
-
-});
+      // confetti sound got help with all sound with replit /copilot to make it work
+      function nextQuestion() {
+        currentQuestionIndex++;
+        if (currentQuestionIndex < questions.length) {
+          showQuestion();
+        } else {
+          questionEl.innerText = `Quiz finished! You scored ${score}/${questions.length}`;
+          answersEl.innerHTML = "";
+          nextBtn.style.display = "none";
+          // feedback
+          feedbackEl.innerText = score > questions.length/2
+            ? "Well done! Music master!"
+            : "Not bad! Try again to improve!";
+          // play confetti or celebrate sound if u got more than 3 right
+          if (score > questions.length/2) {
+            celebrateSound.play();         // play celebrate sound
+            if (typeof confetti === "function") {
+              confetti({ particleCount: 100, spread: 70 });
+            }
+          }
+        }
+      }
+    
+      nextBtn.addEventListener("click", nextQuestion);
+      showQuestion();
+    });

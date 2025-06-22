@@ -1,0 +1,177 @@
+/* the button from bootstrap */
+.btn {
+    border: 2px solid white !important;
+    background-color: black !important;
+    font-family: "Playfair Display", sans-serif;
+    color: beige;
+    opacity: 1 !important;
+    margin: 8px;
+
+    
+    
+}
+/* next button */
+#next-btn {
+    border: 2px solid white !important;
+    background-color: black !important;
+    font-family: "Playfair Display", sans-serif;
+    color: beige !important;
+    padding: 0.2rem 1.6rem;
+    border-radius: 8px;
+    text-align: center;
+    margin: 4rem auto;
+    display: block;
+    
+
+
+}
+/* feedback text */
+#feedback {
+
+    color: beige;
+    border-radius: 2rem;
+    font-family: "Playfair Display", sans-serif;
+    font-size: 18px;
+    
+}
+
+/* the score panel */
+#score {
+    
+    border-radius: 8px;
+    border-color: beige;
+    font-family: "Playfair Display", sans-serif;
+    color: beige;
+    font-size: 40px;
+    background-color: rgba(0, 0, 0, 0.4);  /* dark with 50% opacity */
+    display: block;
+    max-width: 300px;
+    margin: 1rem auto;
+    text-align: center;
+    
+
+}
+/* make the buttons larger on hover */
+#next-btn:hover {
+    transform: scale(1.15);
+    color: beige !important;
+     
+}
+/* play again button */
+.play-again-btn {
+    font-family: "Playfair Display", sans-serif;
+    font-size: 20px;
+    color: beige !important;
+    border-radius: 8px;
+    border-color: aliceblue;
+    background-color: black;
+}
+/* play again hover */
+.play-again-btn:hover {
+    transform: scale(1.1);
+}
+.btn:hover {
+    transform: scale(1.15);
+    color: beige !important;
+}
+/* the answers */
+h1 {
+    font-family: "cal sans",sans-serif;
+    color:beige !important;
+    position: relative;
+    font-size: 60px;
+}
+/* the questions */
+#question {
+    font-family: "Playfair Display";
+    color: beige !important;
+    font-size: 55px;
+    position: relative;
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    
+
+    
+    
+}
+/* the background image */
+body {
+    background-image: url("../images/backgroundimage.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: black;
+    /* got help from gpt when moving frame in the background */
+    
+    height: 100vh;
+}
+
+#answers {
+    display: grid;
+    gap: 1rem;
+    justify-content: center;
+}
+
+/* Mobile Media Queries */
+@media (max-width: 575px) {
+    #score {
+        font-size: 24px;
+        max-width: 90%;
+        padding: 8px 15px;
+    }
+    h1 {
+        font-size: 35px;
+    }
+    #question {
+        font-size: 28px;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+
+    }
+    #next-btn {
+        font-size: 16px;
+        padding: 0.4rem 1rem;
+        margin-top: 2rem;
+
+    }
+    /* got tips for copilot that this is nice to use */
+    #answers {
+        grid-template-columns: 1fr !important;
+    }
+}
+
+/* Tablets media queries */
+@media (min-width: 576px) and (max-width: 991px) {
+    #score {
+        font-size: 32px;
+        max-width: 250px;
+        padding: 10px 18px;
+    }
+    h1 {
+        font-size: 45px;
+
+    }
+    #question {
+        font-size: 35px;
+
+    }
+   #next-btn {
+    font-size: 18px;
+    padding: 0.5rem 1.4rem;
+
+   }
+}
+
+/* Desktop media queries */
+@media (min-width: 992px) {
+    #score {
+        font-size: 40px;
+        max-width: 300px;
+        padding: 10px 20px;
+    }
+    #answers {
+        grid-template-columns: 1fr 1fr;
+    }
+
+}

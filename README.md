@@ -15,8 +15,17 @@
 - GoggleFont to style the texts
 - Used Sora AI to make the background
 
+  **Validation**
+- HTML validated with [W3C Markup Validator](https://validator.w3.org/)  
+- CSS validated with [W3C CSS Validator](https://jigsaw.w3.org/css-validator/)  
 
-##How It Works
+
+
+
+**Manual Tests**
+-
+
+## How It Works
 
 - Questions and four answers are stored in a JavaScript array.
 
@@ -57,23 +66,32 @@
 
 **And when i have been hardstuck i got help from ChatHPT, explain on a deeper level**
 
+## Installation
 
-##Usage
+1. Clone the repository  
+   `git clone https://github.com/mathiase4/Vibe-Check.git`  
+2. Change into the project folder  
+   `cd Vibe-Check`  
+3. Open `index.html` in your browser.
 
-###Answer each question by clicking one of the four buttons.
 
-###Listen for the “correct” or “wrong” sound.
 
-###Click Next to proceed.
+## Usage
 
-###At the end, view your score, feedback message, and click Play Again to restart.
+### Answer each question by clicking one of the four buttons.
+
+### Listen for the “correct” or “wrong” sound.
+
+### Click Next to proceed.
+
+### At the end, view your score, feedback message, and click Play Again to restart.
 
 ## Live Demo
 
 Try the Quiz right here!  
 [Click here to try it out!](https://mathiase4.github.io/Vibe-Check/)
 
-##Demo
+## Demo
 ![Vibe Check Screenshot](screenshot.png)
 
 
@@ -86,7 +104,6 @@ Try the Quiz right here!
 - 2025-06-22, fixed the problem on playagainbutton, didnt have DOMcontenctLoaded on the script so got error in devtools.
 - 2025-06-23, goes pretty well actually. the quiz feels kinda finished already.
 - 
-
 
 
 

@@ -95,8 +95,18 @@
 Try the Quiz right here!  
 [Click here to try it out!](https://mathiase4.github.io/Vibe-Check/)
 
-## Demo
-![Vibe Check Screenshot](screenshot.png)
+## Deployment
+
+I published this site using GitHub Pages. Here's how I did it:
+
+1. I pushed all my project files to GitHub in a public repository.
+2. Then I clicked on the **Settings** tab in the repo.
+3. I scrolled down to **Pages** in the sidebar.
+4. Under **Source**, I selected the `main` branch and left the folder as `/ (root)`.
+5. After a few seconds, GitHub gave me a link to the live site.
+
+You can visit the live quiz here:  
+👉 [https://mathiase4.github.io/Vibe-Check/](https://mathiase4.github.io/Vibe-Check/)
 
 
 

@@ -109,6 +109,21 @@ const celebrateSound = document.getElementById("celebrate-sound");
           feedbackEl.innerText = score > questions.length/2
             ? "Well done! Music master!"
             : "Not bad! Try again to improve!";
+
+            // play again button // //some help from cheatsheet 
+            const playAgainBtn = document.createElement("button");
+            playAgainBtn.innerText = "Play Again?";
+            playAgainBtn.classList.add("btn", "Play-again-btn");
+
+            // the button 
+            answersEl.appendChild(playAgainBtn);
+            playAgainBtn.addEventListener("click", () => {
+              currentQuestionIndex = 0;
+              score = 0;
+              scoreEl.innerText = "Score : 0";
+              feedbackEl.innerHTML ="";
+              showQuestion();
+            });
           // play confetti or celebrate sound if u got more than 3 right
           if (score > questions.length/2) {
             celebrateSound.play();         // play celebrate sound

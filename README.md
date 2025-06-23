@@ -29,6 +29,7 @@
 - Sounds play on correct/wrong.
 - Celebratory confetti appears on 4 rights out of 6 or more score.
 - Tested in Chrome, mobile view, and tablet.
+- DevTools in Chrome to see any errors in the console. but no errors found.
 
 ## How It Works
 

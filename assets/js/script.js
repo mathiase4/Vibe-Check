@@ -113,7 +113,7 @@ const celebrateSound = document.getElementById("celebrate-sound");
             // play again button // //some help from cheatsheet 
             const playAgainBtn = document.createElement("button");
             playAgainBtn.innerText = "Play Again?";
-            playAgainBtn.classList.add("btn", "Play-again-btn");
+            playAgainBtn.classList.add("btn", "play-again-btn");
 
             // the button 
             answersEl.appendChild(playAgainBtn);

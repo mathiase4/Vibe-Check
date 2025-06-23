@@ -8,11 +8,11 @@
 - HTML for structure
 - CSS for styling 
 - JavaScript for quiz logic and interactivity
-- Bootstrap for button styles and grid layout
+- [Bootstrap 5](https://getbootstrap.com/)
 - Favicon 
-- Canvas-Confetti library for celebration effect
+- [Canvas Confetti](https://www.npmjs.com/package/canvas-confetti)
 - Audio files for right/wrong and celebration sounds
-- GoggleFont to style the texts
+- [Google Fonts](https://fonts.google.com/)
 - Used Sora AI to make the background
 
   **Validation**
@@ -66,8 +66,6 @@
 **Watched tutorial videos on YouTube to understand quiz logic**
 
 **Referenced QuickRef.me for JavaScript syntax help**
-
-**Referenced QuickRef.me for JavaScript syntax**
 
 **And when i have been hardstuck i got help from ChatHPT, explain on a deeper level**
 

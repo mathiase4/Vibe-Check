@@ -90,10 +90,6 @@
 
 ### At the end, view your score, feedback message, and click Play Again to restart.
 
-## Live Demo
-
-Try the Quiz right here!  
-[Click here to try it out!](https://mathiase4.github.io/Vibe-Check/)
 
 ## Deployment
 

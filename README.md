@@ -13,6 +13,7 @@
 - Canvas-Confetti library for celebration effect
 - Audio files for right/wrong and celebration sounds
 - GoggleFont to style the texts
+- Used Sora AI to make the background
 
 
 ##How It Works
@@ -57,6 +58,21 @@
 **And when i have been hardstuck i got help from ChatHPT, explain on a deeper level**
 
 
+##Usage
+
+###Answer each question by clicking one of the four buttons.
+
+###Listen for the “correct” or “wrong” sound.
+
+###Click Next to proceed.
+
+###At the end, view your score, feedback message, and click Play Again to restart.
+
+## Live Demo
+
+Try the Quiz right here!  
+https://mathiase4.github.io/Vibe-Check/
+
 ##Demo
 ![Vibe Check Screenshot](screenshot.png)
 
@@ -64,9 +80,9 @@
 
 
 ## What i have done today
-- 2025-06-18, i have greated the Quiz through html simple structure and made the questions inside the js file.
+- 2025-06-18, i have created the Quiz through html simple structure and made the questions inside the js file.
 - 2025-06-19, been developing the Quiz in js for the most part, fixed the buttons/answers and scoreboard, fixed Favicon so it looks more nice aswell.
-- 2025-06-21, got stuck on code in JS, dont know how to fix it but im trying my best.
+- 2025-06-21, got stuck on code in JS,Trying to fix the audio/right/wrong sounds. dont know how to fix it but im trying my best.
 - 2025-06-22, fixed the problem on playagainbutton, didnt have DOMcontenctLoaded on the script so got error in devtools.
 - 2025-06-23, goes pretty well actually. the quiz feels kinda finished already.
 - 

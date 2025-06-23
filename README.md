@@ -104,6 +104,11 @@ I published this site using GitHub Pages. Here's how I did it:
 You can visit the live quiz here:  
 👉 [https://mathiase4.github.io/Vibe-Check/](https://mathiase4.github.io/Vibe-Check/)
 
+## Performance Testing
+
+Used Chrome Lighthouse to test performance and accessibility.
+All scores were above 90% for mobile and desktop.
+
 
 
 
@@ -112,7 +117,7 @@ You can visit the live quiz here:
 - 2025-06-19, been developing the Quiz in js for the most part, fixed the buttons/answers and scoreboard, fixed Favicon so it looks more nice aswell.
 - 2025-06-21, got stuck on code in JS,Trying to fix the audio/right/wrong sounds. dont know how to fix it but im trying my best.
 - 2025-06-22, fixed the problem on playagainbutton, didnt have DOMcontenctLoaded on the script so got error in devtools.
-- 2025-06-23, goes pretty well actually. the quiz feels kinda finished already.
+- 2025-06-23, goes pretty well actually. the quiz feels kinda finished already. fixed the buttons from max-width 400 to 200px so it looks nice on all screens!.
 - 
 
 

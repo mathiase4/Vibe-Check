@@ -71,7 +71,7 @@
 ## Live Demo
 
 Try the Quiz right here!  
-https://mathiase4.github.io/Vibe-Check/
+[Click here to try it out!](https://mathiase4.github.io/Vibe-Check/)
 
 ##Demo
 ![Vibe Check Screenshot](screenshot.png)

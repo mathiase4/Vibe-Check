@@ -16,8 +16,8 @@
 - Used Sora AI to make the background
 
   **Validation**
-- HTML validated with [W3C Markup Validator](https://validator.w3.org/)  
-- CSS validated with [W3C CSS Validator](https://jigsaw.w3.org/css-validator/)  
+- HTML validated with [W3C Markup Validator](https://validator.w3.org/) - NO ERRORS OR WARNINGS FOUND!
+- CSS validated with [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) - NO ERRORS OR WARNINGS FOUND!
 
 
 

@@ -1,32 +1,64 @@
 # Vibe-Check
 
-**Vibe Check** is a fun and interactive music Quiz that challenge people that love music and want to test their knowledge for songs, genres and artists.
+**Vibe Check** Vibe Check is a simple, beginner-friendly music quiz that challenges users to test their knowledge of songs, artists, and trivia.
+
+
 
 ## Technologies Used
-- HTML
-- CSS
-- JavaScript
-- Bootstrap
-- Favicon
-  
+- HTML for structure
+- CSS for styling 
+- JavaScript for quiz logic and interactivity
+- Bootstrap for button styles and grid layout
+- Favicon 
+- Canvas-Confetti library for celebration effect
+- Audio files for right/wrong and celebration sounds
+- GoggleFont to style the texts
+
+
+##How It Works
+
+- Questions and four answers are stored in a JavaScript array.
+
+- On page load, the first question and its answers are displayed.
+
+- The script checks if it matches the correct answer.
+
+- Plays a correct or wrong sound. fart sound or yayya!
+
+- Disables further clicks until proceeding.
+
+- A "Next" button appears to load the next question.
+
+- At the end, the final score and feedback message appear, with a "Play Again" button to restart.
+
+- If the user scores more than half, confetti and a celebration sound play.
+
 
 
 ## Future Features
 
 - audio sound and some music clips recognition
 - API integration
-- Difficulty levels
+- Add difficulty levels
+- Show a timer for each question
+- Add more visual feedback (colors, animations)
+
+
 
 ## Help Tools / Resources
-**Used GitHub Copilot for code suggestions and completions**
+**Used GitHub Copilot for code suggestions**
 
 **Watched tutorial videos on YouTube to understand quiz logic**
 
 **Referenced QuickRef.me for JavaScript syntax help**
 
+**Referenced QuickRef.me for JavaScript syntax**
+
 **And when i have been hardstuck i got help from ChatHPT, explain on a deeper level**
 
 
+##Demo
+![Vibe Check Screenshot](screenshot.png)
 
 
 
@@ -34,3 +66,21 @@
 ## What i have done today
 - 2025-06-18, i have greated the Quiz through html simple structure and made the questions inside the js file.
 - 2025-06-19, been developing the Quiz in js for the most part, fixed the buttons/answers and scoreboard, fixed Favicon so it looks more nice aswell.
+- 2025-06-21, got stuck on code in JS, dont know how to fix it but im trying my best.
+- 2025-06-22, fixed the problem on playagainbutton, didnt have DOMcontenctLoaded on the script so got error in devtools.
+- 2025-06-23, goes pretty well actually. the quiz feels kinda finished already.
+- 
+
+
+
+
+
+
+
+## Author
+
+Mathias Eriksson – [GitHub/mathiase4](https://github.com/mathiase4)
+
+## License
+
+This project is licensed under the MIT License. 

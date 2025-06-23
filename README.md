@@ -109,6 +109,18 @@ You can visit the live quiz here:
 Used Chrome Lighthouse to test performance and accessibility.
 All scores were above 95+% for mobile and desktop.
 
+Desktop scores:
+- Performance: 97
+- Accessibility: 96
+- Best Practices: 100
+- SEO: 100
+
+Mobile scores:
+- Performance: 96 (incognito mode)
+- Accessibility: 100
+- Best Practices: 100
+
+
 
 
 

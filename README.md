@@ -23,7 +23,12 @@
 
 
 **Manual Tests**
--
+- Click each answer, correct one makes yaya! sound.
+- Next button loads next question.
+- Play Again button resets quiz.
+- Sounds play on correct/wrong.
+- Celebratory confetti appears on 4 rights out of 6 or more score.
+- Tested in Chrome, mobile view, and tablet.
 
 ## How It Works
 

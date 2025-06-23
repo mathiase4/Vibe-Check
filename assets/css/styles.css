@@ -90,6 +90,19 @@ h1 {
     position: relative;
     font-size: 60px;
 }
+
+/* make the buttons red or green */
+.btn-success {
+    background-color: green !important;
+    border-color: white !important;
+}
+
+.btn-danger {
+    background-color: darkred !important;
+    border-color: white !important;
+}
+
+
 /* the questions */
 #question {
     font-family: "Playfair Display";

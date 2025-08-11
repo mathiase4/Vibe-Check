@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const nextBtn     = document.getElementById("next-btn");
 
   // audio files
-  const wrongSound     = document.getElementById("wrong-sound");
+  const wrongSound   = document.getElementById("wrong-sound");
 const correctSound   = document.getElementById("correct-sound");
 const celebrateSound = document.getElementById("celebrate-sound");
 
@@ -52,11 +52,34 @@ const celebrateSound = document.getElementById("celebrate-sound");
   let currentQuestionIndex = 0;
   let score = 0;
 
+// Function that starts a sound from the beginning
+function playSound(snd) {
+  try {
+    snd.pause();          
+    snd.currentTime = 0;  
+    snd.play();
+  } catch (e) {
+    
+  }
+}
+
+// Function that stop every sound
+function stopAllSounds() {
+  [correctSound, wrongSound, celebrateSound].forEach(s => {
+    try {
+      s.pause();
+      s.currentTime = 0;
+    } catch (e) {}
+  });
+}
 
     // showQuestion function, go help from gpt with this one //
     function showQuestion() {
+        stopAllSounds(); 
+        const q = questions[currentQuestionIndex];
+        
       
-      const q = questions[currentQuestionIndex];
+    
       
       questionEl.innerText = q.question;
       //Clear old buttons
@@ -84,14 +107,15 @@ const celebrateSound = document.getElementById("celebrate-sound");
         const q = questions[currentQuestionIndex];
         // right or wrong 
         if (clicked.innerText === q.correct) {
-          correctSound.play();              // play right sound
+          playSound(correctSound);           // play right sound
           clicked.classList.add("btn-success");
           score++;
           scoreEl.innerText = "Score: " + score;
         } else {
-          wrongSound.play();                // play wrong sound
+          playSound(wrongSound);             // play wrong sound
           clicked.classList.add("btn-danger");
         }
+        
         Array.from(answersEl.children).forEach(btn => btn.disabled = true);
         nextBtn.style.display = "block";
       }
@@ -126,11 +150,12 @@ const celebrateSound = document.getElementById("celebrate-sound");
             });
           // play confetti or celebrate sound if u got more than 3 right
           if (score > questions.length/2) {
-            celebrateSound.play();         // play celebrate sound
+            playSound(celebrateSound);     // play celebrate sound
             if (typeof confetti === "function") {
               confetti({ particleCount: 100, spread: 70 });
             }
           }
+          
         }
       }
     

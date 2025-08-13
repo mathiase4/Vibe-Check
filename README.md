@@ -2,9 +2,20 @@
 
 **Vibe Check** Vibe Check is a simple, beginner-friendly music quiz that challenges users to test their knowledge of songs, artists, and trivia.
 
+## Target Users
+- People who like music and want to test their knowledge.
+- Casual users who want a quick and fun game.
+- Beginners who want a simple quiz to play.
+
+## User Goals
+- Play a quiz with clear feedback (colors, sounds, score).
+- Use the quiz on mobile, tablet, or desktop.
+- Restart the quiz easily anytime.
+
 ### Responsive Mockup
 This image shows the site on different devices (made with “Am I Responsive”).
 ![Responsive Mockup](assets/screenshots/mobiledesktoplook.png)
+
 
 ## Technologies Used
 - HTML for structure
@@ -15,7 +26,16 @@ This image shows the site on different devices (made with “Am I Responsive”)
 - [Canvas Confetti](https://www.npmjs.com/package/canvas-confetti)
 - Audio files for right/wrong and celebration sounds
 - [Google Fonts](https://fonts.google.com/)
-- Used Sora AI to make the background
+- - Used Sora AI (image generator) to make the background
+
+
+## Design Choices
+I chose bright, high-contrast colors for answer buttons so they are easy to see.
+I used the photo generator “Sora” to give the quiz a friendly and old school feel.
+I used Bootstrap to make the site responsive and work well on all screen sizes.
+The layout is kept simple so users can focus on the quiz without distractions.
+
+
 
 ## Validation
 
@@ -27,10 +47,6 @@ This image shows the site on different devices (made with “Am I Responsive”)
 
 - JavaScript checked with [JSHint](https://jshint.com/) — only ES6 syntax warnings (const, let, arrow functions). No functional errors.  
   ![JS Validation Screenshot](assets/screenshots/jshintchecker.png)
-
-
-
-
 
 
 **Manual Tests**
@@ -157,6 +173,7 @@ Mobile scores:
 
 
 ## Testing
+
 
 ### Manual Testing of Features
 

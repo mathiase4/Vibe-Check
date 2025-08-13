@@ -236,7 +236,7 @@ I also looked on different screen sizes and checked my code with online tools.
 The quiz works well. All main features work like planned, it is responsive, and there are no errors in the code validators.
 
 **Open problems**
-None found at this time.
+No open problems found. The site works as intended across devices and browsers.
 
 
 

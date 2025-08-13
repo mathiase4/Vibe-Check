@@ -172,7 +172,8 @@ Scores: Performance 78, Accessibility 68, Best Practices 100, SEO 82
 - Firefox – Works fine
 - Edge – Works fine
 - Safari on iPhone – Works fine
-  No issues found.
+
+   No issues found.
 
 ## Accessibility
 

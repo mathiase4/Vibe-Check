@@ -219,9 +219,9 @@ I also looked on different screen sizes and checked my code with online tools.
 - Fix: No fix needed.
 
 - Screenshots:
-- ![Mobile](assets/screenshots/responsive-mobile.png)
-- ![Tablet](assets/screenshots/responsive-tablet.png)
-- ![Desktop](assets/screenshots/responsive-desktop.png)
+- ![Mobile](assets/screenshots/mobileview.png)
+- ![Tablet](assets/screenshots/tabletview.png)
+- ![Desktop](assets/screenshots/desktopview.png)
 
 
 **Code check**

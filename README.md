@@ -2,7 +2,9 @@
 
 **Vibe Check** Vibe Check is a simple, beginner-friendly music quiz that challenges users to test their knowledge of songs, artists, and trivia.
 
-
+### Responsive Mockup
+This image shows the site on different devices (made with “Am I Responsive”).
+![Responsive Mockup](assets/screenshots/mobiledesktoplook.png)
 
 ## Technologies Used
 - HTML for structure
@@ -118,10 +120,6 @@ The hand‑drawn drafts are also in the repo for reference:
 
 ## Final Design (Screenshots)
 
-### Responsive Mockup
-This image shows the site on different devices (made with “Am I Responsive”).
-![Responsive Mockup](assets/screenshots/mobiledesktoplook.png)
-
 ### Live Desktop View
 This is a screenshot from the real site.
 ![Desktop Live](assets/screenshots/finishedproduct.png)
@@ -236,6 +234,9 @@ I also looked on different screen sizes and checked my code with online tools.
 
 **Summary**
 The quiz works well. All main features work like planned, it is responsive, and there are no errors in the code validators.
+
+**Open problems**
+None found at this time.
 
 
 

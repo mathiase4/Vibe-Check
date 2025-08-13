@@ -53,15 +53,14 @@ const celebrateSound = document.getElementById("celebrate-sound");
   let score = 0;
 
 // Function that starts a sound from the beginning
-function playSound(snd) {
+function playSound(el) {
   try {
-    snd.pause();          
-    snd.currentTime = 0;  
-    snd.play();
-  } catch (e) {
-    
-  }
+    const a = el.cloneNode();  
+    a.currentTime = 0;
+    a.play().catch(() => {});
+  } catch (e) {}
 }
+
 
 // Function that stop every sound
 function stopAllSounds() {

@@ -17,13 +17,13 @@
 
 - **Validation**
 - HTML validated with [W3C Markup Validator](https://validator.w3.org/) - NO ERRORS OR WARNINGS FOUND!
-  ![HTML Validation Screenshot](assets/screenshots/html-validation.png)
+  ![HTML Validation Screenshot](assets/screenshots/htmlchecher.png)
   
 - CSS validated with [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) - NO ERRORS OR WARNINGS FOUND!
-  ![CSS Validation Screenshot](assets/screenshots/css-validation.png)
+  ![CSS Validation Screenshot](assets/screenshots/csschecker.png)
   
 - JavaScript checked with [JSHint](https://jshint.com/) - No big problems found.
-  ![JS Validation Screenshot](assets/screenshots/js-validation.png)
+  ![JS Validation Screenshot](assets/screenshots/jshintchecker.png)
 
 
 

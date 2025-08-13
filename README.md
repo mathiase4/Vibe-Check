@@ -15,15 +15,17 @@
 - [Google Fonts](https://fonts.google.com/)
 - Used Sora AI to make the background
 
-- **Validation**
-- HTML validated with [W3C Markup Validator](https://validator.w3.org/) - NO ERRORS OR WARNINGS FOUND!
+## Validation
+
+- HTML validated with [W3C Markup Validator](https://validator.w3.org/) — no errors or warnings found.  
   ![HTML Validation Screenshot](assets/screenshots/htmlchecker.png)
-  
-- CSS validated with [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) - NO ERRORS OR WARNINGS FOUND!
+
+- CSS validated with [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) — no errors or warnings found.  
   ![CSS Validation Screenshot](assets/screenshots/csschecker.png)
-  
-- JavaScript checked with [JSHint](https://jshint.com/) - No big problems found.
+
+- JavaScript checked with [JSHint](https://jshint.com/) — only ES6 syntax warnings (const, let, arrow functions). No functional errors.  
   ![JS Validation Screenshot](assets/screenshots/jshintchecker.png)
+
 
 
 
@@ -215,6 +217,12 @@ I also looked on different screen sizes and checked my code with online tools.
 - Testing: Opened DevTools in Chrome and switched between device sizes (mobile, tablet, desktop).
 - Result: Everything looked fine, no layout break.
 - Fix: No fix needed.
+
+- Screenshots:
+- ![Mobile](assets/screenshots/responsive-mobile.png)
+- ![Tablet](assets/screenshots/responsive-tablet.png)
+- ![Desktop](assets/screenshots/responsive-desktop.png)
+
 
 **Code check**
 - HTML: Checked with W3C Validator, no errors found.

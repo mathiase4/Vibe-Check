@@ -15,9 +15,16 @@
 - [Google Fonts](https://fonts.google.com/)
 - Used Sora AI to make the background
 
-  **Validation**
+- **Validation**
 - HTML validated with [W3C Markup Validator](https://validator.w3.org/) - NO ERRORS OR WARNINGS FOUND!
+  ![HTML Validation Screenshot](assets/screenshots/html-validation.png)
+  
 - CSS validated with [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) - NO ERRORS OR WARNINGS FOUND!
+  ![CSS Validation Screenshot](assets/screenshots/css-validation.png)
+  
+- JavaScript checked with [JSHint](https://jshint.com/) - No big problems found.
+  ![JS Validation Screenshot](assets/screenshots/js-validation.png)
+
 
 
 
@@ -195,12 +202,7 @@ I also looked on different screen sizes and checked my code with online tools.
 - Result: Worked after fix.  
 - Fix: I stop the sound before playing again.
 
-```js
-function playSfx(audio) {
-  audio.pause();
-  audio.currentTime = 0;
-  audio.play();
-````
+
 
 **Keyboard focus**
 - Expected: I can move between buttons with TAB and SHIFT+TAB.

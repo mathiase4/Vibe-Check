@@ -149,6 +149,83 @@ Mobile scores:
 - Best Practices: 100
 
 
+## Testing
+
+I tested the quiz by myself.  
+I clicked things and checked if they worked.  
+I also looked on different screen sizes and checked my code with online tools.
+
+---
+
+### 1) Manual tests
+
+**Answer buttons**  
+- Expected: Turn green if right, red if wrong. Only one button works for each question.  
+- Testing: I clicked a wrong answer, then a right answer.  
+- Result: Worked as expected.  
+- Fix: No fix needed.  
+
+**Scoreboard**  
+- Expected: Go up by 1 if the answer is right, no change if wrong.  
+- Testing: I answered 4 questions 2 right, 2 wrong.  
+- Result: Worked as expected.  
+- Fix: No fix needed.  
+
+**Next button**  
+- Expected: Goes to the next question and resets the buttons.  
+- Testing: I clicked **Next** after each answer.  
+- Result: Worked as expected.  
+- Fix: No fix needed.  
+
+**End of quiz**  
+- Expected: Show my score, feedback text, and a "Play again" button.  
+- Testing: I played until the last question.  
+- Result: Worked as expected.  
+- Fix: No fix needed.  
+
+**Play again button**  
+- Expected: Reset the score and start the quiz again from question 1.  
+- Testing: I clicked "Play again" after finishing the quiz.  
+- Result: Worked as expected.  
+- Fix: No fix needed.  
+
+**Sounds**  
+- Expected: Play correct/wrong sound every time. Play celebration sound and show confetti if score is more than half.  
+- Testing: I answered quickly and pressed **Next** quickly to see if sound works.  
+- Result: Worked after fix.  
+- Fix: I stop the sound before playing again.
+
+```js
+function playSfx(audio) {
+  audio.pause();
+  audio.currentTime = 0;
+  audio.play();
+````
+
+**Keyboard focus**
+- Expected: I can move between buttons with TAB and SHIFT+TAB.
+- Testing: Pressed TAB many times, then SHIFT+TAB to go back.
+- Result: Worked as expected.
+- Fix: No fix needed.
+
+**Responsive check**
+- Expected: The quiz should work on mobile, tablet, and desktop.
+- Testing: Opened DevTools in Chrome and switched between device sizes (mobile, tablet, desktop).
+- Result: Everything looked fine, no layout break.
+- Fix: No fix needed.
+
+**Code check**
+- HTML: Checked with W3C Validator, no errors found.
+- CSS: Checked with W3C CSS Validator, no errors found.
+- JavaScript: Checked with JSHint, no big problems found.
+- Fix: No fix needed.
+
+**Bugs I found and fixed**
+- Bug: Sounds would sometimes play over each other.
+- Fix: I made a small function to stop all sounds before playing a new one.
+
+**Summary**
+The quiz works well. All main features work like planned, it is responsive, and there are no errors in the code validators.
 
 
 

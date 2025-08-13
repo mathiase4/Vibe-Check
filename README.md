@@ -26,7 +26,7 @@ This image shows the site on different devices (made with “Am I Responsive”)
 - [Canvas Confetti](https://www.npmjs.com/package/canvas-confetti)
 - Audio files for right/wrong and celebration sounds
 - [Google Fonts](https://fonts.google.com/)
-- - Used Sora AI (image generator) to make the background
+- Used Sora AI (image generator) to make the background
 
 
 ## Design Choices
@@ -95,7 +95,7 @@ The layout is kept simple so users can focus on the quiz without distractions.
 
 **Referenced QuickRef.me for JavaScript syntax help**
 
-**And when i have been hardstuck i got help from ChatHPT, explain on a deeper level**
+**And when i have been hardstuck i got help from ChatGPT, explain on a deeper level**
 
 ## Installation
 
@@ -157,22 +157,35 @@ You can visit the live quiz here:
 
 ## Performance Testing
 
-Used Chrome Lighthouse to test performance and accessibility.
-All scores were above 95+% for mobile and desktop.
+I tested the site using Chrome Lighthouse.
 
-Desktop scores:
-- Performance: 97
-- Accessibility: 96
-- Best Practices: 100
-- SEO: 100
+**Desktop Test**  
+![Lighthouse Desktop](assets/screenshots/devtoolsdesktop.png)  
+Scores: Performance 98, Accessibility 68, Best Practices 100, SEO 82
 
-Mobile scores:
-- Performance: 96 (incognito mode)
-- Accessibility: 100
-- Best Practices: 100
+**Mobile Test**  
+![Lighthouse Mobile](assets/screenshots/devtoolsmobile.png)  
+Scores: Performance 78, Accessibility 68, Best Practices 100, SEO 82
 
+## Browser Testing
+- Chrome – Works fine
+- Firefox – Works fine
+- Edge – Works fine
+- Safari on iPhone – Works fine
+  No issues found.
 
-## Testing
+## Accessibility
+
+I tested the site’s accessibility using Chrome Lighthouse.
+
+The score was 68 for both desktop and mobile.  
+Main suggestions were:
+- Add alternative text for background images.
+- Increase contrast for some text against the background.
+
+I chose not to change the background image because it is part of the quiz theme.  
+The buttons already have high contrast colors so they are easy to see.
+
 
 
 ### Manual Testing of Features

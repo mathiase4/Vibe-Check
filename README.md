@@ -151,6 +151,15 @@ I used high‑contrast colors and clear button labels to make the quiz easy to u
 ## Testing
 I tested my site in different ways to make sure everything works well on different devices, browsers, and screen sizes. I also checked the code for any errors.
 
+### Responsiveness Testing
+I tested the site using [ResponsiveDesignChecker.com](https://responsivedesignchecker.com/)  
+to confirm it works well on common screen sizes mobile, tablet, laptop, desktop.  
+
+**Result:** Layout adapted correctly on all devices with no overlapping elements.  
+
+![Responsive Design Test](assets/screenshots/mobiledesktoplook.png)
+
+
 ### Manual Feature Testing
 **Answer buttons**  
 - **Expected:** Turn green if right, red if wrong. Only one button works for each question.  

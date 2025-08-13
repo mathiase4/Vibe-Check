@@ -12,6 +12,13 @@
 - Use the quiz on mobile, tablet, or desktop.
 - Restart the quiz easily anytime.
 
+  ## Final Design (Screenshots)
+
+### Live Desktop View
+This is a screenshot from the real site.
+![Desktop Live](assets/screenshots/finishedproduct.png)
+
+
 ### Responsive Mockup
 This image shows the site on different devices (made with “Am I Responsive”).
 ![Responsive Mockup](assets/screenshots/mobiledesktoplook.png)
@@ -36,27 +43,6 @@ I used Bootstrap to make the site responsive and work well on all screen sizes.
 The layout is kept simple so users can focus on the quiz without distractions.
 
 
-
-## Validation
-
-- HTML validated with [W3C Markup Validator](https://validator.w3.org/) — no errors or warnings found.  
-  ![HTML Validation Screenshot](assets/screenshots/htmlchecker.png)
-
-- CSS validated with [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) — no errors or warnings found.  
-  ![CSS Validation Screenshot](assets/screenshots/csschecker.png)
-
-- JavaScript checked with [JSHint](https://jshint.com/) — only ES6 syntax warnings (const, let, arrow functions). No functional errors.  
-  ![JS Validation Screenshot](assets/screenshots/jshintchecker.png)
-
-
-**Manual Tests**
-- Click each answer, correct one makes yaya! sound.
-- Next button loads next question.
-- Play Again button resets quiz.
-- Sounds play on correct/wrong.
-- Celebratory confetti appears on 4 rights out of 6 or more score.
-- Tested in Chrome, mobile view, and tablet.
-- DevTools in Chrome to see any errors in the console. but no errors found.
 
 ## How It Works
 
@@ -134,13 +120,6 @@ The hand‑drawn drafts are also in the repo for reference:
 
 ---
 
-## Final Design (Screenshots)
-
-### Live Desktop View
-This is a screenshot from the real site.
-![Desktop Live](assets/screenshots/finishedproduct.png)
-
-
 
 ## Deployment
 
@@ -155,25 +134,6 @@ I published this site using GitHub Pages. Here's how I did it:
 You can visit the live quiz here:  
 👉 [https://mathiase4.github.io/Vibe-Check/](https://mathiase4.github.io/Vibe-Check/)
 
-## Performance Testing
-
-I tested the site using Chrome Lighthouse.
-
-**Desktop Test**  
-![Lighthouse Desktop](assets/screenshots/devtoolsdesktop.png)  
-Scores: Performance 98, Accessibility 68, Best Practices 100, SEO 82
-
-**Mobile Test**  
-![Lighthouse Mobile](assets/screenshots/devtoolsmobile.png)  
-Scores: Performance 78, Accessibility 68, Best Practices 100, SEO 82
-
-## Browser Testing
-- Chrome – Works fine
-- Firefox – Works fine
-- Edge – Works fine
-- Safari on iPhone – Works fine
-
-   No issues found.
 
 ## Accessibility
 
@@ -187,10 +147,10 @@ Main suggestions were:
 I chose not to change the background image because it is part of the quiz theme.  
 The buttons already have high contrast colors so they are easy to see.
 
+## Testing
+I tested my site in different ways to make sure everything works well on different devices, browsers, and screen sizes. I also checked the code for any errors.
 
-
-### Manual Testing of Features
-
+### Manual Feature Testing
 **Answer buttons**  
 - **Expected:** Turn green if right, red if wrong. Only one button works for each question.  
 - **Testing:** Clicked wrong answer, then right answer.  
@@ -239,27 +199,43 @@ The buttons already have high contrast colors so they are easy to see.
 - **Result:** Layout adapted correctly on all sizes.  
 - **Fix:** No fix needed.
 
----
+### Performance Testing
+I tested the site using Chrome Lighthouse.
 
-### Code Validation
+**Desktop Test**  
+![Lighthouse Desktop](assets/screenshots/devtoolsdesktop.png)  
+Scores: Performance 98, Accessibility 68, Best Practices 100, SEO 82
 
-- **HTML:** Checked with [W3C Validator](https://validator.w3.org/) – no errors found.  
-- **CSS:** Checked with [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) – no errors found.  
-- **JavaScript:** Checked with [JSHint](https://jshint.com/) – only ES6 syntax warnings; no functional issues.
+**Mobile Test**  
+![Lighthouse Mobile](assets/screenshots/devtoolsmobile.png)  
+Scores: Performance 78, Accessibility 68, Best Practices 100, SEO 82
 
----
+### Browser Testing
+- Chrome – Works fine  
+- Firefox – Works fine  
+- Edge – Works fine  
+- Safari on iPhone – Works fine  
+
+No issues found.
+
+### Validation Testing
+- HTML validated with [W3C Markup Validator](https://validator.w3.org/) — no errors or warnings found.  
+  ![HTML Validation Screenshot](assets/screenshots/htmlchecker.png)
+
+- CSS validated with [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) — no errors or warnings found.  
+  ![CSS Validation Screenshot](assets/screenshots/csschecker.png)
+
+- JavaScript checked with [JSHint](https://jshint.com/) — only ES6 syntax warnings (const, let, arrow functions). No functional errors.  
+  ![JS Validation Screenshot](assets/screenshots/jshintchecker.png)
 
 ### Bugs Found and Fixed
-
 - **Sound playback overlap on fast clicks**  
   - **Issue:** Sounds overlapped or skipped if clicking quickly.  
   - **Fix:** Added function to stop all audio before playing new sound.
 
----
-
 ### Open Problems
-
 No open problems found – the site works as intended across devices and browsers.
+
 
 
 

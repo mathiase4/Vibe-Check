@@ -146,6 +146,7 @@ Main suggestions were:
 
 I chose not to change the background image because it is part of the quiz theme.  
 The buttons already have high contrast colors so they are easy to see.
+I used high‑contrast colors and clear button labels to make the quiz easy to use for everyone.
 
 ## Testing
 I tested my site in different ways to make sure everything works well on different devices, browsers, and screen sizes. I also checked the code for any errors.

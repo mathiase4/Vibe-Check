@@ -82,13 +82,41 @@
 
 ## Usage
 
-### Answer each question by clicking one of the four buttons.
+- Answer each question by clicking one of the four buttons.
 
-### Listen for the “correct” or “wrong” sound.
+- Listen for the “correct” or “wrong” sound.
 
-### Click Next to proceed.
+- Click Next to proceed.
 
-### At the end, view your score, feedback message, and click Play Again to restart.
+- At the end, view your score, feedback message, and click Play Again to restart.
+
+
+
+## Wireframes
+
+I made wireframes before I built the site. They show the layout only.
+
+### Mobile (390×844)
+![Mobile Wireframe](assets/screenshots/wireframedigitalmobile.png)
+
+### Desktop (1440×1040)
+![Desktop Wireframe](assets/screenshots/wireframedigitaldesktop.png)
+
+The hand‑drawn drafts are also in the repo for reference:
+`assets/screenshots/wireframedesktop.jpg`.
+
+---
+
+## Final Design (Screenshots)
+
+### Responsive Mockup
+This image shows the site on different devices (made with “Am I Responsive”).
+![Responsive Mockup](assets/screenshots/mobiledesktoplook.png)
+
+### Live Desktop View
+This is a screenshot from the real site.
+![Desktop Live](assets/screenshots/finishedproduct.png)
+
 
 
 ## Deployment
